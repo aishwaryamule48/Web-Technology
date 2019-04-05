@@ -1,0 +1,89 @@
+
+<!DOCYPE html>
+<html>
+<style>
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+  align:center;
+}
+
+.imgcontainer
+{
+ margin-left:30px;
+
+}
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+</style>
+<body>
+
+<div id="id01">
+<form  name="stdreg" action="home.html" class="animate" id="second_form">
+ <div class="imgcontainer">
+    <img src="C:\Users\admin\Desktop\Website\download.png" alt="Avatar" width=50px; heigth=50px;  >
+ </div>
+
+  <div class="container">
+    <p><b>Username</b><p>
+    <input type="text" placeholder="Enter Username" name="uname" >
+    <p><b>Password</b><p>
+   <p> <input type="password" placeholder="Enter Password" id="psw1" name="psw" ></br></p>
+    <p><input type="password" placeholder="Enter Confirm Password" name="cpsw" ></br></p>
+      <input type="submit"  value="submit">
+      <button type="reset" class="cancelbtn"  >reset</button>
+  </div>
+</form>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<script>
+$(document).ready(function() {
+ 
+  $('form[id="second_form"]').validate({
+  rules: {
+    uname: 'required',
+ 
+         psw: {
+      required: true,
+      minlength: 8,
+    }
+, 
+cpsw: {
+      required: true,
+      minlength: 8,
+ equalTo: '#psw1' ,  }
+  },
+  messages: {
+    uname: 'This field is required',
+       psw: {
+      minlength: 'Password must be at least 8 characters long',
+},cpsw: {
+      minlength: 'Password must be at least 8 characters long' ,equalTo: 'Passwords not equal',
+ }
+  },
+  submitHandler: function(form) {
+    form.submit();
+  }
+});
+ 
+});
+
+
+</script>
+
+
+</html>

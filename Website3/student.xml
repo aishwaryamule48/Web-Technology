@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<college>
+    <student>
+        <username>Bench press</username>
+        <password>12 reps</password>
+        <firstname>10 reps</firstname>
+        <lastname>8 reps</lastname>
+        <gender>6 reps</gender>
+    </student>
+    <student>
+        <username>Shoulder press</username>
+        <password>12 reps</password>
+        <firstname>8 reps</firstname>
+        <lastname>6 reps</lastname>
+        <gender>6 reps</gender>
+    </student>
+    <student>
+        <username>Bench Dips</username>
+        <password>20 reps</password>
+        <firstname>15 reps</firstname>
+        <lastname>10 reps</lastname>
+        <gender>10 reps</gender>
+    </student>
+    <student>
+         <username>Leg press</username>
+        <password>15reps</password>
+        <firstname>12 reps</firstname>
+        <lastname>12 reps</lastname>
+        <gender>10 reps</gender>
+    </student>
+</college>
